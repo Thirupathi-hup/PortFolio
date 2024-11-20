@@ -1,0 +1,12 @@
+
+  
+  .projImg {
+    cursor: pointetr;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .projImg:hover {
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,48 @@
+#navbar {
+    font-family: var(--jetbrains-font);
+  }
+  
+  #navbar-brand {
+    background: transparent;
+    color: #ffff;
+  }
+  
+  #headerLink {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    transition: all 0.5s;
+  }
+  
+  #headerLink:hover {
+    color: var(--main-color);
+  }
+  
+  #navLink {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    transition: all 0.5s;
+  }
+  
+  #navLink:hover {
+    color: var(--main-color);
+    transform: scale(1.05);
+  }
+  
+  .navbar-nav .navbar-toggler.active,
+  .navbar-nav #navLink.active {
+    color: var(--main-color) !important;
+  }
+  
+  #ham-menu {
+    color: var(--text-color);
+  }
+  
+  #ham-menu:hover {
+    color: var(--main-color);
+    transition: all 0.5s;
+  }
+  

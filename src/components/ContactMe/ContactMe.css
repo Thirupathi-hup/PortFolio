@@ -1,0 +1,129 @@
+/* General Input and Textarea Styling */
+input,
+textarea {
+  background-color: var(--second-bg-color) !important;
+  color: var(--text-color);
+  border: 1px solid var(--second-bg-color) !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+input {
+  height: 40px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  line-height: 1.5;
+  appearance: none;
+  background-clip: padding-box;
+  border: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus States */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
+  box-shadow: 0 0 0.25rem var(--main-color);
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--hover-color);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Root Variables */
+:root {
+  --main-color: #007bff;
+  --hover-color: #0056b3;
+  --second-bg-color: #333333;
+  --text-color: #ffffff;
+}
+
+/* Flex Layout for the Form */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Form Input Fields */
+.col-5 {
+  flex: 1 1 200px;  /* Flex shrink and grow behavior */
+  min-width: 200px;
+}
+
+textarea {
+  max-width: 130%;
+}
+
+/* Button Styling */
+button {
+  width: 50%;
+  max-width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-5 {
+    flex: 1 1 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+#contactme{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
